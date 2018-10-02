@@ -1,0 +1,18 @@
+body{
+	font-family: 'Helvetica';
+}
+
+form{
+	border-style: solid;
+	border-color: blue;
+	color: green;
+}
+
+h1 {
+	color: green;
+	text-align: center;
+}
+
+.buttonClass {
+	text-align: center;
+}

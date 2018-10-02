@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Alimentador terrível</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body background="monstrinho.jpg">
+  <h1>Alimentar o comedor de pedras</h1>
+  <form action="http://terrivel.herokuapp.com/monster/" method="GET">
+      <label>Nome do monstro:
+        <input name="nome" pattern="[A-Za-zç]{0,}">
+      </label>
+    <div class="row">
+      <div class="col-md-6">
+        <label>Número de pedras:
+          <input name="num_pedras" type="number" step="1" min="0" value="3">
+        </label><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <label>Tamanho das pedras:
+          <input name="tam_pedras" type="number" step="0.5" min="1" max="7">
+        </label><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <label>Cor do Céu 1:
+          <input name="corCeu1" type="color"></input>
+        </label><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <label>Cor do Céu 2:
+          <input name="corCeu2" type="color"></input>
+        </label><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <label>Tipo das pedras:
+          <select name="tipo_pedras">
+            <option value=""></option>
+            <option value="marroada">Marroada</option>
+            <option value="ametista">Ametista</option>
+            <option value="topazio">Topazio</option>
+            <option value="espinela">Espinela</option>
+          </select>
+        </label><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <label>
+          Pedras sortidas? <input name="tipo_pedras_sortidas" type="radio" value="sim">Sim <input name="tipo_pedras_sortidas"
+            type="radio" value="nao">Não</input></label><br>
+      </div>
+    </div>
+    <div class="buttonClass">
+      <button type="submit" class="btn btn-success">Alimentar Monstro</button>
+    </div>
+  </form>
+</body>
+
+</html>
